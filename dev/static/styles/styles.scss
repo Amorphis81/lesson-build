@@ -18,7 +18,10 @@ ul, li {
   padding: 0;
 }
 
-a { text-decoration: none; }
+a { 
+  color: $base-text-color;
+  text-decoration: none;
+}
 
 p { margin: 0; }
 
@@ -38,7 +41,11 @@ input,
 select,
 button { outline: none; }
 
-body {font-family: $main-font;}
+body {
+  font-family: $main-font;
+  background-color: $main-bg-color;
+  color: $base-text-color;
+}
 
 *, *:before, *:after { box-sizing: border-box; }
 

@@ -13,25 +13,37 @@
     <div class="wrapper">
       <header class="header">
         <div class="header-top">
-          <div class="location header-top__location"><span class="location__current">Нижний Новгород</span></div>
-          <nav class="main-nav header-top__main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"> <a class="main-nav__link" href="#">Оплата и доставка</a></li>
-              <li class="main-nav__item"> <a class="main-nav__link" href="#">Гарантия</a></li>
-              <li class="main-nav__item"> <a class="main-nav__link" href="#">Услуги</a></li>
-              <li class="main-nav__item"> <a class="main-nav__link" href="#">Компания</a></li>
-              <li class="main-nav__item"> <a class="main-nav__link" href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="user-nav header-top__user-nav"><a class="user-nav__link" href="#">Войти</a></div>
+          <div class="container">
+            <div class="location header-top__location">
+              <div class="location__header"><span class="location__current">Нижний Новгород</span></div>
+              <div class="location__body"></div>
+            </div>
+            <nav class="main-nav header-top__main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"> <a class="main-nav__link" href="#">Оплата и доставка</a></li>
+                <li class="main-nav__item"> <a class="main-nav__link" href="#">Гарантия</a></li>
+                <li class="main-nav__item"> <a class="main-nav__link" href="#">Услуги</a></li>
+                <li class="main-nav__item"> <a class="main-nav__link" href="#">Компания</a></li>
+                <li class="main-nav__item"> <a class="main-nav__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="user-nav header-top__user-nav"><a class="user-nav__link" href="#">Войти</a></div>
+          </div>
         </div>
         <div class="header-main">
-          <div class="catalog header-main__catalog">
-            <div class="sandwich">
-              <div class="sandwich__line sandwich__line--top"></div>
-              <div class="sandwich__line sandwich__line--middle"></div>
-              <div class="sandwich__line sandwich__line--bottom"></div>
+          <div class="container">
+            <div class="catalog header-main__catalog">
+              <div class="sandwich">
+                <div class="sandwich__line sandwich__line--top"></div>
+                <div class="sandwich__line sandwich__line--middle"></div>
+                <div class="sandwich__line sandwich__line--bottom"></div>
+              </div><span class="catalog__title">Каталог стройматериалов</span>
             </div>
+            <div class="search header-main__search">
+              <input class="input-field" placeholder="Артикул или название товара">
+            </div>
+            <div class="order-callback"><span class="order-callback__description">Звоните круглосуточно</span><a class="order-callback__phone" href="tel:+74993348888">+7 499 334-88-88</a><a class="order-callback__link" href="#">Заказать звонок</a></div>
+            <div class="basket-prev"><span class="basket-prev__title">Ваш заказ</span><span class="basket-prev__count">здесь пока пусто</span></div>
           </div>
         </div>
       </header>
