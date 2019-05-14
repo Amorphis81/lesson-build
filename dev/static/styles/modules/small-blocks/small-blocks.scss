@@ -3,6 +3,7 @@
 .logo{
   display: flex;
   flex-direction: column;
+  max-width: 154px;
   font-size: 12px;
 }
 
@@ -15,5 +16,28 @@
   &__icon{
     @include size(22px);
     fill: $white;
+  }
+  .input-field {
+    flex: 0 0 220px;
+    width: 220px;
+  }
+}
+
+.order-callback{
+  display: flex;
+  flex-direction: column;
+  &__description{ font-size: 12px; }
+  &__link { 
+    color: $white;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  &__phone { 
+    color: $main-action-color; 
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.5;
+    white-space: nowrap;
   }
 }
