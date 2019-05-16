@@ -1,0 +1,14 @@
+.s-bg-white{ background-color: $white; }
+
+.section-header{
+  align-items: center;
+  display: flex;
+  &__right {
+    margin-left: auto;
+  }
+  &__link {
+    color: $link-color;
+    text-decoration: underline;
+    font-weight: 600;
+  }
+}

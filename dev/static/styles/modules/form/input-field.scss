@@ -4,11 +4,11 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid $inputBorderColor;
+  border: 1px solid $input-border-color;
   height: 50px;
   box-shadow: none;
   @include placeholder{
-    color: $inputPlaceholderColor;
+    color: $text-info-color;
   };
   &.input-field--size-small{
     height: 40px;

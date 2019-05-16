@@ -1,0 +1,14 @@
+.actions-prev{
+  display: flex;
+  & > * {
+    flex: 1;
+    &:not(:last-child) { margin-right: 30px; }
+  }
+}
+
+.action-prev {
+  &__header {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
