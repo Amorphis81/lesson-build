@@ -7,8 +7,27 @@
 }
 
 .action-prev {
+  border-radius: 4px;
+  overflow: hidden;
   &__header {
+    height: 185px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+  }
+  &__body {
+    padding: 15px 20px;
+    background-color: $white;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    font-size: 22px;
+    font-weight: 600;
   }
 }
