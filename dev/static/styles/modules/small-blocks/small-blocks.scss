@@ -1,6 +1,7 @@
 @import "location";
 @import "banner";
 @import "section";
+@import "sales-leaders";
 
 .logo{
   display: flex;
@@ -54,7 +55,6 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 1.25;
-    margin-bottom: 20px;
   }
 }
 
