@@ -1,3 +1,19 @@
-section.s-questions.s-size-small
+mixin askYourQuestion(icon, text)
+  li.ask-your-question__item
+    a(href="#").ask-your-question__link
+      +icon(icon, 'ask-your-question__icon')
+      span.ask-your-question__text=text
+
+section.s-questions
   .container
     .questions
+      .upgrade
+        .upgrade__icon-wrapper
+          +icon('question-mark', 'upgrade__icon')
+        a(href="#").link.link-underline Что можно улучшить в этой странице?
+      .ask-your-question
+        span.ask-your-question__title Задайте вопрос
+        ul.ask-your-question__list
+          +askYourQuestion('messenger', 'Messenger')
+          +askYourQuestion('vk-social-network-logo', 'Вконтакте')
+          +askYourQuestion('telegram', 'Telegram')

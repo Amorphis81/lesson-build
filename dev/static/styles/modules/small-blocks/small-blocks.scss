@@ -2,6 +2,7 @@
 @import "banner";
 @import "section";
 @import "sales-leaders";
+@import "links";
 
 .logo{
   display: flex;
@@ -31,10 +32,7 @@
   flex-direction: column;
   &__description{ font-size: 12px; }
   &__link { 
-    color: $white;
     font-size: 14px;
-    text-decoration: underline;
-    font-weight: 600;
   }
   &__phone { 
     color: $main-action-color; 
@@ -84,4 +82,57 @@
     @include size(30px);
     fill: $base-text-color;
   }
+}
+
+.upgrade {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  & > * {
+    &:not(:last-child) { margin-right: 10px; }
+  }
+  &__icon {
+    @include size(10px);
+    fill: white;
+    &-wrapper {
+      @include size(16px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $text-info-color;
+      border-radius: 50%;
+    }
+
+  }
+}
+
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ask-your-question {
+  display: flex;
+  align-items: center;
+  & > * {
+    &:not(:last-child) { margin-right: 30px; }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    & > * {
+      &:not(:last-child) { margin-right: 20px; }
+    }
+  }
+  &__link {
+    & > * {
+      &:not(:last-child) { margin-right: 10px; }
+    }
+  }
+  &__icon {
+    @include size(24px);
+    fill: $base-text-color;
+  }
+
 }
